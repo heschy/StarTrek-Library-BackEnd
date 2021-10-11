@@ -1,20 +1,10 @@
 import mhn;
-
-
-
-
-def db_entry_decode(database, mhn):
-    output = '';
-    output += 'Name: '                                                + database[0] + '\n';
-    output += 'Klasse: '                                              + database[1] + '\n';
-    output += 'Registriernummer(n): '                                 + database[2] + '\n';
-    output += 'Captain: '                                             + database[3] + '\n';
-    output += 'Zeitraum: '                                            + database[4] + '\n';
-    output += 'Medizinisches Holografisches Notfallprogramm (MHN): '  + mhn + '\n';
-    return output;
+from starfleet_functions import *;
 
 def library(name):
     output='\n';
+
+    # --- Library Building ---
 
     spaceship_enterprise = [
         'USS Enterprise (NX-01)      NX Klasse            Captain Jonathan Archer,    2151 - 2161\n',
@@ -48,6 +38,8 @@ def library(name):
         spaceship_voyager,
         spaceship_prometheus_59650];
         
+    # --- Library Access ---
+    
     if name == 'MHN' or name == 'Medizinisches Holografisches Notfallprogramm' or name == 'mhn'or name == 'Medizinisch Holografisches Notfallprogramm':
         output = mhn.v1()+'\n';
         output += mhn.v2();
