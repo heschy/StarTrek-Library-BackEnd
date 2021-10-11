@@ -6,6 +6,7 @@ def library(name):
 
     # --- Library Building ---
 
+    # ------Library Building: Spaceships ------
     spaceship_enterprise = [
         'USS Enterprise (NX-01)      NX Klasse            Captain Jonathan Archer,    2151 - 2161\n',
         'USS Enterprise (NCC-1701)   Constitution Klasse, Captain James Tiberus Kirk, 2245 - 2285\n',
@@ -31,12 +32,27 @@ def library(name):
         '2373 - 2385',
         'Version 2']
 
-    
-    db = [
+    starships = [
         spaceship_enterprise,
         spaceship_prometheus,
         spaceship_voyager,
         spaceship_prometheus_59650];
+
+
+    # ------ Library Builing: Starship Classes ------
+
+    starshipclass_ufp_galaxy = [
+        'Library Build uncomplete...'
+    ];
+
+
+    starshipclasses_ufp = [starshipclass_ufp_galaxy];
+    starshipclasses     = [starshipclasses_ufp];
+
+    db = [
+        starships,
+        starshipclasses
+        ];
         
     # --- Library Access ---
     
@@ -57,7 +73,7 @@ def library(name):
             output += listitem;
     
     elif name == 'NX-59650' or name == 'NX-74913':
-        output += db_entry_decode(spaceship_prometheus_59650, mhn.v2());
+        output += db_entry_ship_decode(spaceship_prometheus_59650, mhn.v2());
     
     elif name == 'db_entry:nx59650' or name == 'db_entry:nx74913':
         output += str(spaceship_prometheus_59650);
@@ -76,3 +92,4 @@ def library(name):
         output += 'Zugriff nicht möglich!'+'\n';
         
     return output;
+
