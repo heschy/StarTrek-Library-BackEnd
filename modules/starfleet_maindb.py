@@ -82,6 +82,13 @@ spaceship_prometheus_59650 = [
     'Unbekannt',
     '2373 - 2385']
 
+spaceship_voyager74656 = [
+    'USS Voyager',
+    'Interpid Klasse',
+    'NCC-74656',
+    'Captain Kathryn Janeway',
+    '2373 - 2385']
+
 starships = [
     spaceship_enterprise,
     spaceship_prometheus,
