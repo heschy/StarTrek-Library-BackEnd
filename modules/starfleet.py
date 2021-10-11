@@ -43,7 +43,7 @@ def library(name):
         output += db_entry_ship_decode(spaceship_enterprise_1701e, mhn.v1());
 
     elif name == 'NCC-1701-J' or name == 'NCC 1701 J' or name == 'NCC-1701 J':
-        output += db_entry_ship_decode(spaceship_enterprise_1701j, 'Nicht Installiert');
+        output += db_entry_ship_decode(spaceship_enterprise_1701j, 'Unbekannt');
     
     elif name == 'db_entry:nx59650' or name == 'db_entry:nx74913':
         output += str(spaceship_prometheus_59650);
