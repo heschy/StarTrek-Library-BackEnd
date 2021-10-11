@@ -82,7 +82,7 @@ spaceship_prometheus_59650 = [
     'Unbekannt',
     '2373 - 2385']
 
-spaceship_voyager74656 = [
+spaceship_voyager_74656 = [
     'USS Voyager',
     'Interpid Klasse',
     'NCC-74656',
@@ -93,7 +93,15 @@ starships = [
     spaceship_enterprise,
     spaceship_prometheus,
     spaceship_voyager,
-    spaceship_prometheus_59650];
+    spaceship_prometheus_59650,
+    spaceship_enterprise_1701,
+    spaceship_enterprise_1701a,
+    spaceship_enterprise_1701b,
+    spaceship_enterprise_1701c,
+    spaceship_enterprise_1701d,
+    spaceship_enterprise_1701e,
+    spaceship_enterprise_1701j,
+    spaceship_voyager_74656];
 
 
 # --- Starship Classes ---
