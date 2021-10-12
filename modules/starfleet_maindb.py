@@ -116,7 +116,7 @@ starshipclasses     = [starshipclasses_ufp];
 
 # --- Database Merging ---
 
-db = [
+maindb = [
     starships,
     starshipclasses
     ];

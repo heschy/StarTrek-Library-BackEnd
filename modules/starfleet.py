@@ -1,6 +1,6 @@
 import mhn;
 from starfleet_functions import *;
-from starfleet_maindb import *;
+import starfleet_maindb as db;
 
 def library(name):
     output='\n';
@@ -10,46 +10,43 @@ def library(name):
         output += mhn.v2();
         
     elif name == 'USS Enterprise':
-        for listitem in spaceship_enterprise:
+        for listitem in db.spaceship_enterprise:
             output += listitem;
             
     elif name == 'USS Prometheus':
-        for listitem in spaceship_prometheus:
+        for listitem in db.spaceship_prometheus:
             output += listitem;
             
     elif name == 'USS Voyager':
-        for listitem in spaceship_voyager:
+        for listitem in db.spaceship_voyager:
             output += listitem;
     
     elif name == 'NX-59650' or name == 'NX-74913':
-        output += db_entry_ship_decode(spaceship_prometheus_59650, mhn.v2());
+        output += db_entry_ship_decode(db.spaceship_prometheus_59650, mhn.v2());
 
     elif name == 'NCC-1701' or name == 'NCC 1701':
-        output += db_entry_ship_decode(spaceship_enterprise_1701, 'Nicht Installiert');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701, 'Nicht Installiert');
 
     elif name == 'NCC-1701-A' or name == 'NCC 1701 A' or name == 'NCC-1701 A':
-        output += db_entry_ship_decode(spaceship_enterprise_1701a, 'Nicht Installiert');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701a, 'Nicht Installiert');
 
     elif name == 'NCC-1701-B' or name == 'NCC 1701 B' or name == 'NCC-1701 B':
-        output += db_entry_ship_decode(spaceship_enterprise_1701b, 'Nicht Installiert');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701b, 'Nicht Installiert');
 
     elif name == 'NCC-1701-C' or name == 'NCC 1701 C' or name == 'NCC-1701 C':
-        output += db_entry_ship_decode(spaceship_enterprise_1701c, 'Nicht Installiert');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701c, 'Nicht Installiert');
 
     elif name == 'NCC-1701-D' or name == 'NCC 1701 D' or name == 'NCC-1701 D':
-        output += db_entry_ship_decode(spaceship_enterprise_1701d, 'Nicht Installiert');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701d, 'Nicht Installiert');
 
     elif name == 'NCC-1701-E' or name == 'NCC 1701 E' or name == 'NCC-1701 E':
-        output += db_entry_ship_decode(spaceship_enterprise_1701e, mhn.v1());
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701e, mhn.v1());
 
     elif name == 'NCC-1701-J' or name == 'NCC 1701 J' or name == 'NCC-1701 J':
-        output += db_entry_ship_decode(spaceship_enterprise_1701j, 'Unbekannt');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701j, 'Unbekannt');
 
     elif name == 'NCC-74656' or name == 'NCC 74656':
-        output += db_entry_ship_decode(spaceship_voyager_74656, 'Unbekannt');
-    
-    elif name == 'db_entry:nx59650' or name == 'db_entry:nx74913':
-        output += str(spaceship_prometheus_59650);
+        output += db_entry_ship_decode(db.spaceship_voyager_74656, 'Unbekannt');
 
     elif name == 'exit' or name == 'quit' or name == 'stop':
         return 1;
@@ -59,7 +56,7 @@ def library(name):
         output += 'Um alle Informationen über ein bestimmtes Schiff zu erhalten, geben sie bitte die Registriernummer des Schiffes an.' + '\n';
     
     elif name == 'db' or name == 'print_db' or name == 'print db' or name == 'database' or name == 'print_database' or name == 'print database':
-        print('db' + str(db));
+        print('db' + str(db.maindb));
         output = 'Output to Large, wrote into Console';
     else:
         output += 'Zugriff nicht möglich!'+'\n';
