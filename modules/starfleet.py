@@ -9,18 +9,20 @@ def library(name):
         output = mhn.v1()+'\n';
         output += mhn.v2();
         
-    elif name == 'USS Enterprise':
+    elif is_name('uss_enterprise', name):
         for listitem in db.spaceship_enterprise:
             output += listitem;
             
-    elif name == 'USS Prometheus':
+    elif is_name('uss_prometheus', name):
         for listitem in db.spaceship_prometheus:
             output += listitem;
             
-    elif name == 'USS Voyager':
+    elif is_name('uss_voyager', name):
         for listitem in db.spaceship_voyager:
             output += listitem;
-    
+    elif is_class('ufp_galaxy', name):
+        output += db_entry_shipclass_UFP_decode(db.maindb[1][0][0]);
+
     elif name == 'NX-59650' or name == 'NX-74913':
         output += db_entry_ship_decode(db.spaceship_prometheus_59650, mhn.v2());
 
@@ -48,14 +50,14 @@ def library(name):
     elif name == 'NCC-74656' or name == 'NCC 74656':
         output += db_entry_ship_decode(db.spaceship_voyager_74656, 'Unbekannt');
 
-    elif name == 'exit' or name == 'quit' or name == 'stop':
+    elif is_cmd('quit', name):
         return 1;
         
-    elif name == 'help' or name == 'info':
+    elif is_cmd('help', name):
         output += 'Um eine Liste der Schiffe zu erhalten, die den selben namen tragen, geben sie bitte den Namen ein.' + '\n';
         output += 'Um alle Informationen über ein bestimmtes Schiff zu erhalten, geben sie bitte die Registriernummer des Schiffes an.' + '\n';
     
-    elif name == 'db' or name == 'print_db' or name == 'print db' or name == 'database' or name == 'print_database' or name == 'print database':
+    elif is_cmd('db_print', name):
         print('db' + str(db.maindb));
         output = 'Output to Large, wrote into Console';
     else:

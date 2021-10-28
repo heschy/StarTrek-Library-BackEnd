@@ -107,7 +107,17 @@ starships = [
 # --- Starship Classes ---
 
 starshipclass_ufp_galaxy = [
-    'Library Build uncomplete...'
+    'Förschungsschiff', # Typ
+    640, # Länge
+    460, # Breite
+    140, # Höhe
+    42, # Decks
+    1000, # Besatzung, Zivilisten miteinbezogen
+    9.2, # Sichere höchstgeschwindigkeit
+    9.8, # Höchstgeschwindigkeit
+    10, # Phaserbänke
+    2, # Torpedorampen (Photon)
+    250, # Torpetod (Phtoton)
 ];
 
 

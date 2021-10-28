@@ -4,3 +4,7 @@ def v1():
 def v2():
 	return 'Model 2 (Formaler Name Unbekannt)';
 	
+mhn_ak1 = [
+	'Luis Zimmerman', # Erarbeitet von
+	'Build uncomplete'
+];
