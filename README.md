@@ -1,9 +1,15 @@
 # StarTrek-Library-BackEnd
-The Library Modules of StarTrek Library. They are **not** executable.
+Die Bibliotheksmodule für die StarTrek-Library. Die Dateien sind nicht ausführbar.
 
-## Usage
-In order to have an executable application, you have to create a Front-End.
-This is the Console-FrontEnd I have used [here](https://github.com/heschy/StarTrek-Library-Console-FrontEnd):
+# Sprache - Language
+Verfügbar in:
+
+[``English``](https://github.com/heschy/StarTrek-Library-BackEnd/tree/main)
+[``German``](https://github.com/heschy/StarTrek-Library-BackEnd/tree/German-Deutsch)
+
+## Nutzung
+Um ein ausführbares Programm zu haben, müssen sie ein Front-End erstellen.
+Das ist das Konsolen-FrontEnd das ich [hier](https://github.com/heschy/StarTrek-Library-Console-FrontEnd) genutzt habe:
 
 ```python
 import starfleet;
@@ -15,8 +21,3 @@ while x != 'cmd(_close_)':
   print('Result:');
   print(x);
 ```
-
-### Warning:
-
-The Library is in german!
-There will be an english version soon.
