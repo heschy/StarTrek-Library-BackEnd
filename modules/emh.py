@@ -1,8 +1,8 @@
 def v1():
-	return 'Model 1 (Database Build uncomplete)';
+	return 'Mark 1 (EMH Program AK-1 Diagnostic and Surgical Subroutine Omega-323)';
 	
 def v2():
-	return 'Model 2 (Formaler Name unknown)';
+	return 'Mark 2 (Formaler Name unknown)';
 	
 #emh_ak1 = [
 	#'Luis Zimmerman', # Erarbeitet von
