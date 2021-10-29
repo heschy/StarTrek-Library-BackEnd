@@ -51,7 +51,7 @@ def library(name):
         output += db_entry_ship_decode(db.spaceship_voyager_74656, 'Unbekannt');
 
     elif is_cmd('quit', name):
-        return 1;
+        return 'cmd(_close_)';
         
     elif is_cmd('help', name):
         output += 'Um eine Liste der Schiffe zu erhalten, die den selben namen tragen, geben sie bitte den Namen ein.' + '\n';
