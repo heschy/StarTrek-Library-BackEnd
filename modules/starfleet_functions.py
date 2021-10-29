@@ -55,3 +55,10 @@ def is_name(name, str):
 def is_cmd(cmd,str):
     if cmd == 'quit':
         if str == 'exit' or str == 'quit' or str == 'stop': return True;
+        else: return False;
+    elif cmd == 'help':
+        if str == 'help' or str == 'info': return True;
+        else: return False;
+    elif cmd == 'db_print':
+        if str == 'db' or str == 'print_db' or str == 'print db' or str == 'database' or str == 'print_database' or str == 'print database': return True;
+        else: return False;
