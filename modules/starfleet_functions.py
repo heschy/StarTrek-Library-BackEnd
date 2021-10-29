@@ -32,7 +32,7 @@ def db_entry_shipclass_UFP_decode(database):
     
 def is_class(class_name ,str):
     if class_name == 'ufp_galaxy':
-        if str == 'Galaxy Klasse' or str == 'Galaxy Class' or str == 'galaxy klasse' or str == 'galaxy class':
+        if str == 'Galaxy Class' or str == 'galaxy class' or str == 'Galaxy class':
             return True;
         else: return False;
     else: return False;
@@ -54,11 +54,11 @@ def is_name(name, str):
 
 def is_cmd(cmd,str):
     if cmd == 'quit':
-        if str == 'exit' or str == 'quit' or str == 'stop': return True;
+        if str == 'exit' or str == cmd or str == 'stop': return True;
         else: return False;
     elif cmd == 'help':
-        if str == 'help' or str == 'info': return True;
+        if str == cmd or str == 'info': return True;
         else: return False;
     elif cmd == 'db_print':
-        if str == 'db' or str == 'print_db' or str == 'print db' or str == 'database' or str == 'print_database' or str == 'print database': return True;
+        if str == 'db' or str == cmd or str == 'print_db' or str == 'print db' or str == 'database' or str == 'print_database' or str == 'print database': return True;
         else: return False;

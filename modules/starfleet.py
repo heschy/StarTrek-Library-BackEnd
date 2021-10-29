@@ -45,10 +45,10 @@ def library(name):
         output += db_entry_ship_decode(db.spaceship_enterprise_1701e, mhn.v1());
 
     elif name == 'NCC-1701-J' or name == 'NCC 1701 J' or name == 'NCC-1701 J':
-        output += db_entry_ship_decode(db.spaceship_enterprise_1701j, 'Unbekannt');
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701j, 'unknown');
 
     elif name == 'NCC-74656' or name == 'NCC 74656':
-        output += db_entry_ship_decode(db.spaceship_voyager_74656, 'Unbekannt');
+        output += db_entry_ship_decode(db.spaceship_voyager_74656, 'unknown');
 
     elif is_cmd('quit', name):
         return 'cmd(_close_)';

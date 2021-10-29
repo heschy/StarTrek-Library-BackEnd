@@ -1,27 +1,27 @@
 
 # --- Spaceships ---
 spaceship_enterprise = [
-    'USS Enterprise (NX-01)      NX Klasse            Captain Jonathan Archer,    2151 - 2161\n',
-    'USS Enterprise (NCC-1701)   Constitution Klasse, Captain James Tiberus Kirk, 2245 - 2285\n',
-    'USS Enterprise (NCC-1701-A) Constitution Klasse, Captain James Tiberus Kirk, 2286 - 2293\n',
-    'USS Enterprise (NCC-1701-B) Excelsior Klasse,    Captain John Harriman,      2293 - Unbekannt\n',
-    'USS Enterprise (NCC-1701-C) Ambassador Klasse,   Captain Rachel Garrett,     Unbekannt - 2344\n',
-    'USS Enterprise (NCC-1701-D) Galaxy Klasse,       Captain Jean-Luc Picard,    2363 - 2371\n',
-    'USS Enterprise (NCC-1701-E) Sovereign Klasse,    Captain Jean-Luc Picard,    2372 - Unbekannt\n',
-    'USS Enterprise (NCC-1701-J) Universe Klasse,     Ubekannter Captain,         Unbekannt\n'];
+    'USS Enterprise (NX-01)      NX class            Captain Jonathan Archer,    2151 - 2161\n',
+    'USS Enterprise (NCC-1701)   Constitution class, Captain James Tiberus Kirk, 2245 - 2285\n',
+    'USS Enterprise (NCC-1701-A) Constitution class, Captain James Tiberus Kirk, 2286 - 2293\n',
+    'USS Enterprise (NCC-1701-B) Excelsior class,    Captain John Harriman,      2293 - unknown\n',
+    'USS Enterprise (NCC-1701-C) Ambassador class,   Captain Rachel Garrett,     unknown - 2344\n',
+    'USS Enterprise (NCC-1701-D) Galaxy class,       Captain Jean-Luc Picard,    2363 - 2371\n',
+    'USS Enterprise (NCC-1701-E) Sovereign class,    Captain Jean-Luc Picard,    2372 - unknown\n',
+    'USS Enterprise (NCC-1701-J) Universe class,     Ubekannter Captain,         unknown\n'];
 
 spaceship_prometheus = [
-    'USS Prometheus (NX-59650/NX-74913) Prometheus Klasse, Unbekannter Captain,            2373 - 2385\n',
-    'USS Prometheus (NCC-71201),        Nebula Klasse,     Lieutenant Commander Piersall, Unbekannt\n'  ];
+    'USS Prometheus (NX-59650/NX-74913) Prometheus class, unknowner Captain,            2373 - 2385\n',
+    'USS Prometheus (NCC-71201),        Nebula class,     Lieutenant Commander Piersall, unknown\n'  ];
 
 spaceship_voyager = [
-    'USS Voyager (NCC-74656) Intrepid Klasse, Captain Kathryn Janeway, 2373 - 2385\n'];
+    'USS Voyager (NCC-74656) Intrepid class, Captain Kathryn Janeway, 2373 - 2385\n'];
 
 # --- Individual Starships ---
 
 spaceship_enterprise_1701 = [
     'USS Enterprise',
-    'Constitution Klasse',
+    'Constitution class',
     'NCC-1701',
     'Captain James Tiberus Kirk',
     '2151 - 2161',
@@ -29,7 +29,7 @@ spaceship_enterprise_1701 = [
 
 spaceship_enterprise_1701a = [
     'USS Enterprise',
-    'Constitution Klasse',
+    'Constitution class',
     'NCC-1701-A',
     'Captain James Tiberus Kirk',
     '2245 - 2285',
@@ -37,23 +37,23 @@ spaceship_enterprise_1701a = [
 
 spaceship_enterprise_1701b = [
     'USS Enterprise',
-    'Excelsior Klasse',
+    'Excelsior class',
     'NCC-1701-B',
     'Captain John Harriman',
-    '2293 - Unbekannt',
-    'Unbekannt'];
+    '2293 - unknown',
+    'unknown'];
 
 spaceship_enterprise_1701c = [
     'USS Enterprise',
-    'Ambassador Klasse',
+    'Ambassador class',
     'NCC-1701-C',
     'Captain Rachel Garrett',
-    'Unbekannt - 2344',
+    'unknown - 2344',
     'Zerstört'];
 
 spaceship_enterprise_1701d = [
     'USS Enterprise',
-    'Galaxy Klasse',
+    'Galaxy class',
     'NCC-1701-D',
     'Captain Jean-Luc Picard',
     '2363 - 2371',
@@ -61,30 +61,30 @@ spaceship_enterprise_1701d = [
 
 spaceship_enterprise_1701e = [
     'USS Enterprise',
-    'Sovereign Klasse',
+    'Sovereign class',
     'NCC-1701-E',
     'Captain Jean-Luc Picard',
-    '2372 - Unbekannt',
-    'Unbekannt'];
+    '2372 - unknown',
+    'unknown'];
 
 spaceship_enterprise_1701j = [
     'USS Enterprise',
-    'Universe Klasse',
+    'Universe class',
     'NCC-1701-J',
-    'Unbekannt',
-    '26. Jahrhundert',
-    'Unbekannt'];
+    'unknown',
+    '26. century',
+    'unknown'];
 
 spaceship_prometheus_59650 = [
     'USS Prometheus',
-    'Prometheus Klasse',
+    'Prometheus class',
     'NX-59650 und NX-74913',
-    'Unbekannt',
+    'unknown',
     '2373 - 2385']
 
 spaceship_voyager_74656 = [
     'USS Voyager',
-    'Interpid Klasse',
+    'Interpid class',
     'NCC-74656',
     'Captain Kathryn Janeway',
     '2373 - 2385']
