@@ -1,13 +1,13 @@
-import mhn;
+import emh;
 from starfleet_functions import *;
 import starfleet_maindb as db;
 
 def library(name):
     output='\n';
     
-    if name == 'MHN' or name == 'Medizinisches Holografisches Notfallprogramm' or name == 'mhn'or name == 'Medizinisch Holografisches Notfallprogramm':
-        output = mhn.v1()+'\n';
-        output += mhn.v2();
+    if name == 'EMH' or name == 'Emergency Medical Hologramm' or name == 'emh'or name == 'Medizinisch Holografisches Notfallprogramm':
+        output = emh.v1()+'\n';
+        output += emh.v2();
         
     elif is_name('uss_enterprise', name):
         for listitem in db.spaceship_enterprise:
@@ -24,7 +24,7 @@ def library(name):
         output += db_entry_shipclass_UFP_decode(db.maindb[1][0][0]);
 
     elif name == 'NX-59650' or name == 'NX-74913':
-        output += db_entry_ship_decode(db.spaceship_prometheus_59650, mhn.v2());
+        output += db_entry_ship_decode(db.spaceship_prometheus_59650, emh.v2());
 
     elif name == 'NCC-1701' or name == 'NCC 1701':
         output += db_entry_ship_decode(db.spaceship_enterprise_1701, 'Nicht Installiert');
@@ -42,7 +42,7 @@ def library(name):
         output += db_entry_ship_decode(db.spaceship_enterprise_1701d, 'Nicht Installiert');
 
     elif name == 'NCC-1701-E' or name == 'NCC 1701 E' or name == 'NCC-1701 E':
-        output += db_entry_ship_decode(db.spaceship_enterprise_1701e, mhn.v1());
+        output += db_entry_ship_decode(db.spaceship_enterprise_1701e, emh.v1());
 
     elif name == 'NCC-1701-J' or name == 'NCC 1701 J' or name == 'NCC-1701 J':
         output += db_entry_ship_decode(db.spaceship_enterprise_1701j, 'unknown');
