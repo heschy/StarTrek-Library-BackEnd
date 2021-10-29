@@ -4,8 +4,8 @@ The Library Modules of StarTrek Library. They are **not** executable.
 # Language - Sprache
 Available in:
 
-[DE](https://github.com/heschy/StarTrek-Library-BackEnd/tree/German-Deutsch)
-[EN](https://github.com/heschy/StarTrek-Library-BackEnd/tree/main)
+[``German``](https://github.com/heschy/StarTrek-Library-BackEnd/tree/German-Deutsch)
+[``English``](https://github.com/heschy/StarTrek-Library-BackEnd/tree/main)
 
 ## Usage
 In order to have an executable application, you have to create a Front-End.
